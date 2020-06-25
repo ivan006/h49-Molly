@@ -1,12 +1,12 @@
 server {
         listen 80;
-        root /var/www/dusk.outreach-hangar49.com/public;
+        root /var/www/html/dusk.outreach-hangar49.com;
         index index.html index.htm index.nginx-debian.html index.php;
         server_name dusk.outreach-hangar49.com;
 
         location ~ \.php$ {
           fastcgi_split_path_info ^(.+\.php)(/.+)$;
-          fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+          fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
           fastcgi_index index.php;
           include fastcgi_params;
           fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
