@@ -1,0 +1,3 @@
+default._domainkey	IN	TXT	( "v=DKIM1; k=rsa; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvvFXbqgo8wEAKuPi802J7qcEkRwWVj1hQrG6Ka3kp8vNxxmO4BKBXF/09/UJMBHzejHaZj6jl/j2CgpBWG/Tsa7CT38Z3CPhGG8JXAJrYT0iKWEsKrSXbNKEjB/nbsNd+PkvR+GXwtMmml4ZZ3NT/q81NZ/ZFRHwKm8+BlKDBDi+TLTNHD9/7eWz8wjppk3wDBkmupyktDLLLv"
+	  "4/SklcbopuuVo5mZBwLSYsSbxTJc2F7nvBqAPEEfMgXqRK2iE5jY6DhT/BvI9o2fJl00BQzpLKyIu2pwe0uzQw4Pbgx2NvwonA5GKimuWxo15JbGtp5TuG0cIgz4MZrDr3oVMHBwIDAQAB" )  ; ----- DKIM key default for go-hangar49.com
