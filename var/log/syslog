@@ -1,0 +1,809 @@
+
+Jul  6 16:01:02 go-hangar49 postfix/cleanup[4687]: 2F018EA05E2: message-id=<20200706140102.2F018EA05E2@go-hangar49.com>
+Jul  6 16:01:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:01:02 go-hangar49 opendkim[16929]: 2F018EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:01:02 go-hangar49 postfix/cleanup[4687]: 2F018EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:01:02 go-hangar49 kernel: [598144.756042] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=36731 DF PROTO=UDP SPT=44032 DPT=53 LEN=52
+Jul  6 16:01:02 go-hangar49 kernel: [598144.756051] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=36731 DF PROTO=UDP SPT=44032 DPT=53 LEN=52
+Jul  6 16:01:07 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:01:08 go-hangar49 kernel: [598150.837335] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=60.246.100.182 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=53 ID=4812 PROTO=TCP SPT=55666 DPT=5555 WINDOW=49770 RES=0x00 SYN URGP=0
+Jul  6 16:01:11 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:01:21 go-hangar49 kernel: [598164.060375] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=359 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=339
+Jul  6 16:01:26 go-hangar49 kernel: [598168.423324] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=82.221.105.6 DST=62.171.163.29 LEN=44 TOS=0x10 PREC=0x00 TTL=120 ID=53180 PROTO=TCP SPT=24858 DPT=33060 WINDOW=63758 RES=0x00 SYN URGP=0
+Jul  6 16:01:28 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:01:28 go-hangar49 kernel: [598170.615929] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=37480 DF PROTO=UDP SPT=36876 DPT=53 LEN=52
+Jul  6 16:01:28 go-hangar49 kernel: [598170.615934] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=37480 DF PROTO=UDP SPT=36876 DPT=53 LEN=52
+Jul  6 16:01:31 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:01:39 go-hangar49 kernel: [598181.482174] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=359 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=339
+Jul  6 16:01:41 go-hangar49 kernel: [598184.145318] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=94.102.51.28 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=253 ID=61501 PROTO=TCP SPT=41291 DPT=14676 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul  6 16:01:43 go-hangar49 kernel: [598185.361850] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=8580 DF PROTO=TCP SPT=42606 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0
+Jul  6 16:01:43 go-hangar49 kernel: [598185.366725] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=40361 DF PROTO=UDP SPT=38693 DPT=53 LEN=45
+Jul  6 16:01:53 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:01:57 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:01:59 go-hangar49 kernel: [598201.468968] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328
+Jul  6 16:02:00 go-hangar49 cron[1138]: (*system*) RELOAD (/etc/crontab)
+Jul  6 16:02:00 go-hangar49 cron[1138]: Error: bad username; while reading /etc/crontab
+Jul  6 16:02:00 go-hangar49 cron[1138]: (*system*) ERROR (Syntax error, this crontab file will be ignored)
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: DE314EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: DE314EA05E2: message-id=<20200706140202.DE314EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: DE314EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: DE314EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: DF0E6EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: DF0E6EA05E2: message-id=<20200706140202.DF0E6EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: DF0E6EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: DF0E6EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: DFBEAEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: DFBEAEA05E2: message-id=<20200706140202.DFBEAEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: DFBEAEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: DFBEAEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E05C5EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E05C5EA05E2: message-id=<20200706140202.E05C5EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E05C5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E05C5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E0DDFEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E0DDFEA05E2: message-id=<20200706140202.E0DDFEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E0DDFEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E0DDFEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E15F7EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E15F7EA05E2: message-id=<20200706140202.E15F7EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E15F7EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E15F7EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E1DF2EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E1DF2EA05E2: message-id=<20200706140202.E1DF2EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E1DF2EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E1DF2EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E250CEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E250CEA05E2: message-id=<20200706140202.E250CEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E250CEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E250CEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E2B38EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E2B38EA05E2: message-id=<20200706140202.E2B38EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 kernel: [598205.284675] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x20 TTL=235 ID=1328 PROTO=TCP SPT=43418 DPT=4732 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E2B38EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E2B38EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E323CEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E323CEA05E2: message-id=<20200706140202.E323CEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E323CEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E323CEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E3A2EEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E3A2EEA05E2: message-id=<20200706140202.E3A2EEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E3A2EEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E3A2EEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E41B3EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E41B3EA05E2: message-id=<20200706140202.E41B3EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E41B3EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E41B3EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E4913EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E4913EA05E2: message-id=<20200706140202.E4913EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E4913EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E4913EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E4F93EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E4F93EA05E2: message-id=<20200706140202.E4F93EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E4F93EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E4F93EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: warning: E5644EA05E2: message has been queued for 4 days
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E5644EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E5644EA05E2: message-id=<20200706140202.E5644EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E5644EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E5644EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E5B4DEA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E5B4DEA05E2: message-id=<20200706140202.E5B4DEA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E5B4DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E5B4DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E6282EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E6282EA05E2: message-id=<20200706140202.E6282EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E6282EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E6282EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E6928EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E6928EA05E2: message-id=<20200706140202.E6928EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E6928EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E6928EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E70A1EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E70A1EA05E2: message-id=<20200706140202.E70A1EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E70A1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E70A1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E7769EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E7769EA05E2: message-id=<20200706140202.E7769EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E7769EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E7769EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E7E03EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E7E03EA05E2: message-id=<20200706140202.E7E03EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E7E03EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4529]: E7E03EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 postfix/pickup[2056]: E8633EA05E2: uid=0 from=<root>
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E8633EA05E2: message-id=<20200706140202.E8633EA05E2@go-hangar49.com>
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:02:02 go-hangar49 opendkim[16929]: E8633EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:02:02 go-hangar49 postfix/cleanup[4687]: E8633EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:02:14 go-hangar49 kernel: [598217.231083] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=45160 DF PROTO=UDP SPT=45620 DPT=53 LEN=52
+Jul  6 16:02:14 go-hangar49 kernel: [598217.231089] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=45160 DF PROTO=UDP SPT=45620 DPT=53 LEN=52
+Jul  6 16:02:19 go-hangar49 kernel: [598221.948531] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=185.143.72.16 DST=62.171.163.29 LEN=60 TOS=0x00 PREC=0x00 TTL=55 ID=731 DF PROTO=TCP SPT=52233 DPT=25 WINDOW=14600 RES=0x00 SYN URGP=0
+Jul  6 16:02:19 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:02:23 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:02:24 go-hangar49 kernel: [598226.405370] [UFW AUDIT INVALID] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=218.92.0.165 DST=62.171.163.29 LEN=67 TOS=0x00 PREC=0x00 TTL=52 ID=43306 DF PROTO=TCP SPT=51038 DPT=22 WINDOW=115 RES=0x00 ACK PSH URGP=0
+Jul  6 16:02:24 go-hangar49 kernel: [598226.405422] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=218.92.0.165 DST=62.171.163.29 LEN=67 TOS=0x00 PREC=0x00 TTL=52 ID=43306 DF PROTO=TCP SPT=51038 DPT=22 WINDOW=115 RES=0x00 ACK PSH URGP=0
+Jul  6 16:02:24 go-hangar49 kernel: [598227.102651] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.11 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=5777 DF PROTO=UDP SPT=34943 DPT=53 LEN=52
+Jul  6 16:02:24 go-hangar49 kernel: [598227.102660] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.11 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=5777 DF PROTO=UDP SPT=34943 DPT=53 LEN=52
+Jul  6 16:02:26 go-hangar49 kernel: [598228.471480] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=217.182.241.115 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=244 ID=16374 PROTO=TCP SPT=56123 DPT=10677 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul  6 16:02:39 go-hangar49 postfix/smtpd[3749]: connect from unknown[185.143.72.16]
+Jul  6 16:02:40 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:02:41 go-hangar49 kernel: [598244.095911] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=167.99.66.158 DST=144.91.68.245 LEN=60 TOS=0x00 PREC=0x00 TTL=54 ID=17432 DF PROTO=TCP SPT=53602 DPT=22 WINDOW=29200 RES=0x00 SYN URGP=0
+Jul  6 16:02:43 go-hangar49 kernel: [598245.357252] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=4599 DF PROTO=TCP SPT=42612 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0
+Jul  6 16:02:43 go-hangar49 kernel: [598245.359372] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=49042 DF PROTO=UDP SPT=51393 DPT=53 LEN=45
+Jul  6 16:02:43 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:02:43 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[185.143.72.16] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:02:47 go-hangar49 kernel: [598249.829396] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x20 TTL=236 ID=24759 PROTO=TCP SPT=43418 DPT=4840 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul  6 16:02:58 go-hangar49 kernel: [598261.319199] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=138.68.161.17 DST=144.91.68.245 LEN=60 TOS=0x00 PREC=0x00 TTL=59 ID=33927 DF PROTO=TCP SPT=45296 DPT=22 WINDOW=64240 RES=0x00 SYN URGP=0
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 027CBEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 027CBEA05E2: message-id=<20200706140302.027CBEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 027CBEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 027CBEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 032BAEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 032BAEA05E2: message-id=<20200706140302.032BAEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 032BAEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 032BAEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 03C24EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 03C24EA05E2: message-id=<20200706140302.03C24EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 03C24EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 03C24EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0445AEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0445AEA05E2: message-id=<20200706140302.0445AEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0445AEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0445AEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 04D4FEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 04D4FEA05E2: message-id=<20200706140302.04D4FEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 04D4FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 04D4FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 055F1EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 055F1EA05E2: message-id=<20200706140302.055F1EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 055F1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 055F1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 05DDDEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 05DDDEA05E2: message-id=<20200706140302.05DDDEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 05DDDEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 05DDDEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0663EEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0663EEA05E2: message-id=<20200706140302.0663EEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0663EEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0663EEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 06E5AEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 06E5AEA05E2: message-id=<20200706140302.06E5AEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 06E5AEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 06E5AEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 076C1EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 076C1EA05E2: message-id=<20200706140302.076C1EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 076C1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 076C1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 07EF9EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 07EF9EA05E2: message-id=<20200706140302.07EF9EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 07EF9EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 07EF9EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 08805EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 08805EA05E2: message-id=<20200706140302.08805EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 08805EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 08805EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 09071EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 09071EA05E2: message-id=<20200706140302.09071EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 09071EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 09071EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 09881EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 09881EA05E2: message-id=<20200706140302.09881EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 09881EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 09881EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: warning: 0A0C8EA05E2: message has been queued for 4 days
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0A0C8EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0A0C8EA05E2: message-id=<20200706140302.0A0C8EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0A0C8EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0A0C8EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0A948EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0A948EA05E2: message-id=<20200706140302.0A948EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0A948EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0A948EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0B10AEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0B10AEA05E2: message-id=<20200706140302.0B10AEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0B10AEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0B10AEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0B83FEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0B83FEA05E2: message-id=<20200706140302.0B83FEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0B83FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0B83FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0C004EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0C004EA05E2: message-id=<20200706140302.0C004EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0C004EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0C004EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0C7F1EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0C7F1EA05E2: message-id=<20200706140302.0C7F1EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0C7F1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0C7F1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0D04BEA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0D04BEA05E2: message-id=<20200706140302.0D04BEA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0D04BEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4529]: 0D04BEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 postfix/pickup[2056]: 0D933EA05E2: uid=0 from=<root>
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0D933EA05E2: message-id=<20200706140302.0D933EA05E2@go-hangar49.com>
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:03:02 go-hangar49 opendkim[16929]: 0D933EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:03:02 go-hangar49 postfix/cleanup[4687]: 0D933EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:03:06 go-hangar49 kernel: [598268.367773] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.11 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=6960 DF PROTO=UDP SPT=49836 DPT=53 LEN=52
+Jul  6 16:03:06 go-hangar49 kernel: [598268.367781] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.11 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=6960 DF PROTO=UDP SPT=49836 DPT=53 LEN=52
+Jul  6 16:03:06 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:03:07 go-hangar49 kernel: [598269.876108] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=91.240.118.29 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=252 ID=58664 PROTO=TCP SPT=58305 DPT=20017 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul  6 16:03:10 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:03:20 go-hangar49 kernel: [598282.861895] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328
+Jul  6 16:03:21 go-hangar49 kernel: [598283.655866] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=52839 DF PROTO=UDP SPT=35202 DPT=53 LEN=52
+Jul  6 16:03:21 go-hangar49 kernel: [598283.655875] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=52839 DF PROTO=UDP SPT=35202 DPT=53 LEN=52
+Jul  6 16:03:21 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:03:39 go-hangar49 kernel: [598301.884640] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:03:40 go-hangar49 kernel: [598302.471265] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=236 ID=19175 PROTO=TCP SPT=43418 DPT=4910 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:03:43 go-hangar49 kernel: [598305.356448] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=34227 DF PROTO=TCP SPT=42614 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0 
+Jul  6 16:03:43 go-hangar49 kernel: [598305.358172] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=55629 DF PROTO=UDP SPT=38037 DPT=53 LEN=45 
+Jul  6 16:03:52 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:03:53 go-hangar49 postfix/smtpd[3749]: connect from unknown[185.143.72.16]
+Jul  6 16:03:54 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[185.143.72.16] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:03:56 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:04:00 go-hangar49 kernel: [598322.733501] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 1FB2EEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 1FB2EEA05E2: message-id=<20200706140402.1FB2EEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 1FB2EEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 1FB2EEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 204C5EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 204C5EA05E2: message-id=<20200706140402.204C5EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 204C5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 204C5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 20DD4EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 20DD4EA05E2: message-id=<20200706140402.20DD4EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 20DD4EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 20DD4EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 21547EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 21547EA05E2: message-id=<20200706140402.21547EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 21547EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 21547EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 21F46EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 21F46EA05E2: message-id=<20200706140402.21F46EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 21F46EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 21F46EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 22ADAEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 22ADAEA05E2: message-id=<20200706140402.22ADAEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 22ADAEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 22ADAEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 234CCEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 234CCEA05E2: message-id=<20200706140402.234CCEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 234CCEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 234CCEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 23E30EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 23E30EA05E2: message-id=<20200706140402.23E30EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 23E30EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 23E30EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2482FEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2482FEA05E2: message-id=<20200706140402.2482FEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2482FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2482FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2528DEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2528DEA05E2: message-id=<20200706140402.2528DEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2528DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2528DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 25CCCEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 25CCCEA05E2: message-id=<20200706140402.25CCCEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 25CCCEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 25CCCEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 26791EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 26791EA05E2: message-id=<20200706140402.26791EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 26791EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 26791EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 27146EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 27146EA05E2: message-id=<20200706140402.27146EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 27146EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 27146EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 27B25EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 27B25EA05E2: message-id=<20200706140402.27B25EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 27B25EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 27B25EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: warning: 284E3EA05E2: message has been queued for 4 days
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 284E3EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 284E3EA05E2: message-id=<20200706140402.284E3EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 284E3EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 284E3EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 28CB5EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 28CB5EA05E2: message-id=<20200706140402.28CB5EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 28CB5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 28CB5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 294DFEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 294DFEA05E2: message-id=<20200706140402.294DFEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 294DFEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 294DFEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 29C43EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 29C43EA05E2: message-id=<20200706140402.29C43EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 29C43EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 29C43EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2A3D2EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2A3D2EA05E2: message-id=<20200706140402.2A3D2EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2A3D2EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2A3D2EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2AC8FEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2AC8FEA05E2: message-id=<20200706140402.2AC8FEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2AC8FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2AC8FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2B4BBEA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2B4BBEA05E2: message-id=<20200706140402.2B4BBEA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2B4BBEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4529]: 2B4BBEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 postfix/pickup[2056]: 2BCE5EA05E2: uid=0 from=<root>
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2BCE5EA05E2: message-id=<20200706140402.2BCE5EA05E2@go-hangar49.com>
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:04:02 go-hangar49 opendkim[16929]: 2BCE5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:04:02 go-hangar49 postfix/cleanup[4687]: 2BCE5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:04:07 go-hangar49 kernel: [598330.098033] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=58852 DF PROTO=UDP SPT=46584 DPT=53 LEN=52 
+Jul  6 16:04:07 go-hangar49 kernel: [598330.098038] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=58852 DF PROTO=UDP SPT=46584 DPT=53 LEN=52 
+Jul  6 16:04:07 go-hangar49 kernel: [598330.305606] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x20 TTL=236 ID=3783 PROTO=TCP SPT=43418 DPT=4418 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:04:12 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:04:16 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:04:19 go-hangar49 kernel: [598341.495450] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=45.14.44.170 DST=62.171.163.29 LEN=40 TOS=0x08 PREC=0x20 TTL=244 ID=65117 DF PROTO=TCP SPT=15 DPT=8188 WINDOW=512 RES=0x00 SYN URGP=0 
+Jul  6 16:04:19 go-hangar49 kernel: [598341.495506] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=45.14.44.170 DST=62.171.163.29 LEN=40 TOS=0x08 PREC=0x20 TTL=244 ID=65117 DF PROTO=TCP SPT=15 DPT=8188 WINDOW=512 RES=0x00 SYN URGP=0 
+Jul  6 16:04:33 go-hangar49 kernel: [598355.697971] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=59769 DF PROTO=UDP SPT=43020 DPT=53 LEN=52 
+Jul  6 16:04:33 go-hangar49 kernel: [598355.697978] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=59769 DF PROTO=UDP SPT=43020 DPT=53 LEN=52 
+Jul  6 16:04:33 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:04:37 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:04:38 go-hangar49 kernel: [598361.187380] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=188.162.192.140 DST=62.171.163.29 LEN=52 TOS=0x00 PREC=0x00 TTL=118 ID=23772 DF PROTO=TCP SPT=29815 DPT=445 WINDOW=8192 RES=0x00 SYN URGP=0 
+Jul  6 16:04:43 go-hangar49 kernel: [598365.355102] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=60451 DF PROTO=TCP SPT=42616 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0 
+Jul  6 16:04:43 go-hangar49 kernel: [598365.356466] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=61884 DF PROTO=UDP SPT=59405 DPT=53 LEN=45 
+Jul  6 16:04:45 go-hangar49 kernel: [598367.751442] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x20 TTL=236 ID=31388 PROTO=TCP SPT=43418 DPT=4432 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:04:59 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:04:59 go-hangar49 kernel: [598381.600366] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=358 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=338 
+Jul  6 16:05:01 go-hangar49 kernel: [598383.661023] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=185.39.11.39 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x00 TTL=247 ID=56366 PROTO=TCP SPT=52848 DPT=5030 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:05:01 go-hangar49 cron[1138]: (*system*) RELOAD (/etc/crontab)
+Jul  6 16:05:01 go-hangar49 cron[1138]: Error: bad username; while reading /etc/crontab
+Jul  6 16:05:01 go-hangar49 cron[1138]: (*system*) ERROR (Syntax error, this crontab file will be ignored)
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 11DFEEA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4529]: 11DFEEA05E2: message-id=<20200706140502.11DFEEA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 11DFEEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4529]: 11DFEEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 12F09EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 12F09EA05E2: message-id=<20200706140502.12F09EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 12F09EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 12F09EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 13C43EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4529]: 13C43EA05E2: message-id=<20200706140502.13C43EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 13C43EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4529]: 13C43EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 14904EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 14904EA05E2: message-id=<20200706140502.14904EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 14904EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 14904EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 153D0EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 153D0EA05E2: message-id=<20200706140502.153D0EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 153D0EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 153D0EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 15E9CEA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 15E9CEA05E2: message-id=<20200706140502.15E9CEA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 15E9CEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 15E9CEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 169D1EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 169D1EA05E2: message-id=<20200706140502.169D1EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 169D1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 169D1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 17254EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 17254EA05E2: message-id=<20200706140502.17254EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 17254EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 17254EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 17AE2EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 17AE2EA05E2: message-id=<20200706140502.17AE2EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 17AE2EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 17AE2EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 18416EA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[5156]: 18416EA05E2: message-id=<20200706140502.18416EA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 18416EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[5156]: 18416EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 18FAFEA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 18FAFEA05E2: message-id=<20200706140502.18FAFEA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 18FAFEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[4687]: 18FAFEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/pickup[2056]: 19A5DEA05E2: uid=0 from=<root>
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[5156]: 19A5DEA05E2: message-id=<20200706140502.19A5DEA05E2@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:02 go-hangar49 opendkim[16929]: 19A5DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:02 go-hangar49 postfix/cleanup[5156]: 19A5DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:02 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:05:03 go-hangar49 postfix/pickup[2056]: 1A9E4EA05E2: uid=0 from=<root>
+Jul  6 16:05:03 go-hangar49 postfix/cleanup[4687]: 1A9E4EA05E2: message-id=<20200706140503.1A9E4EA05E2@go-hangar49.com>
+Jul  6 16:05:03 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:03 go-hangar49 opendkim[16929]: 1A9E4EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:03 go-hangar49 postfix/cleanup[4687]: 1A9E4EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:04 go-hangar49 postfix/pickup[2056]: 1BB4DEA05E2: uid=0 from=<root>
+Jul  6 16:05:04 go-hangar49 postfix/cleanup[5156]: 1BB4DEA05E2: message-id=<20200706140504.1BB4DEA05E2@go-hangar49.com>
+Jul  6 16:05:04 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:04 go-hangar49 opendkim[16929]: 1BB4DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:04 go-hangar49 postfix/cleanup[5156]: 1BB4DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:05 go-hangar49 postfix/pickup[2056]: warning: 1C863EA05E2: message has been queued for 4 days
+Jul  6 16:05:05 go-hangar49 postfix/pickup[2056]: 1C863EA05E2: uid=0 from=<root>
+Jul  6 16:05:05 go-hangar49 postfix/cleanup[4687]: 1C863EA05E2: message-id=<20200706140505.1C863EA05E2@go-hangar49.com>
+Jul  6 16:05:05 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:05 go-hangar49 opendkim[16929]: 1C863EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:05 go-hangar49 postfix/cleanup[4687]: 1C863EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:06 go-hangar49 postfix/pickup[2056]: 1D43AEA05E2: uid=0 from=<root>
+Jul  6 16:05:06 go-hangar49 postfix/cleanup[5156]: 1D43AEA05E2: message-id=<20200706140506.1D43AEA05E2@go-hangar49.com>
+Jul  6 16:05:06 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:06 go-hangar49 opendkim[16929]: 1D43AEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:06 go-hangar49 postfix/cleanup[5156]: 1D43AEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:07 go-hangar49 postfix/pickup[2056]: 1DE82EA05E2: uid=0 from=<root>
+Jul  6 16:05:07 go-hangar49 postfix/cleanup[4687]: 1DE82EA05E2: message-id=<20200706140507.1DE82EA05E2@go-hangar49.com>
+Jul  6 16:05:07 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:07 go-hangar49 opendkim[16929]: 1DE82EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:07 go-hangar49 postfix/cleanup[4687]: 1DE82EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:08 go-hangar49 postfix/pickup[2056]: 1F039EA05E2: uid=0 from=<root>
+Jul  6 16:05:08 go-hangar49 postfix/cleanup[5156]: 1F039EA05E2: message-id=<20200706140508.1F039EA05E2@go-hangar49.com>
+Jul  6 16:05:08 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:08 go-hangar49 opendkim[16929]: 1F039EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:08 go-hangar49 postfix/cleanup[5156]: 1F039EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:09 go-hangar49 postfix/pickup[2056]: 20033EA05E2: uid=0 from=<root>
+Jul  6 16:05:09 go-hangar49 postfix/cleanup[4687]: 20033EA05E2: message-id=<20200706140509.20033EA05E2@go-hangar49.com>
+Jul  6 16:05:09 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:09 go-hangar49 opendkim[16929]: 20033EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:09 go-hangar49 postfix/cleanup[4687]: 20033EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:10 go-hangar49 postfix/pickup[2056]: 20EF4EA05E2: uid=0 from=<root>
+Jul  6 16:05:10 go-hangar49 postfix/cleanup[5156]: 20EF4EA05E2: message-id=<20200706140510.20EF4EA05E2@go-hangar49.com>
+Jul  6 16:05:10 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:10 go-hangar49 opendkim[16929]: 20EF4EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:10 go-hangar49 postfix/cleanup[5156]: 20EF4EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:11 go-hangar49 postfix/pickup[2056]: 21F44EA05E2: uid=0 from=<root>
+Jul  6 16:05:11 go-hangar49 postfix/cleanup[4687]: 21F44EA05E2: message-id=<20200706140511.21F44EA05E2@go-hangar49.com>
+Jul  6 16:05:11 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:11 go-hangar49 opendkim[16929]: 21F44EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:11 go-hangar49 postfix/cleanup[4687]: 21F44EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:12 go-hangar49 postfix/pickup[2056]: 22FA0EA05E2: uid=0 from=<root>
+Jul  6 16:05:12 go-hangar49 postfix/cleanup[5156]: 22FA0EA05E2: message-id=<20200706140512.22FA0EA05E2@go-hangar49.com>
+Jul  6 16:05:12 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:05:12 go-hangar49 opendkim[16929]: 22FA0EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:05:12 go-hangar49 postfix/cleanup[5156]: 22FA0EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:05:18 go-hangar49 kernel: [598401.278961] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:05:19 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:05:19 go-hangar49 kernel: [598402.345854] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=4267 DF PROTO=UDP SPT=36484 DPT=53 LEN=52 
+Jul  6 16:05:19 go-hangar49 kernel: [598402.345863] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=4267 DF PROTO=UDP SPT=36484 DPT=53 LEN=52 
+Jul  6 16:05:21 go-hangar49 kernel: [598403.978413] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=45.14.44.170 DST=62.171.163.29 LEN=40 TOS=0x08 PREC=0x20 TTL=244 ID=65117 DF PROTO=TCP SPT=7 DPT=9099 WINDOW=512 RES=0x00 SYN URGP=0 
+Jul  6 16:05:23 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:05:27 go-hangar49 kernel: [598409.807227] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=5289 DF PROTO=UDP SPT=41257 DPT=53 LEN=52 
+Jul  6 16:05:27 go-hangar49 kernel: [598409.807235] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=5289 DF PROTO=UDP SPT=41257 DPT=53 LEN=52 
+Jul  6 16:05:32 go-hangar49 postfix/smtpd[3749]: connect from unknown[185.143.72.16]
+Jul  6 16:05:34 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[185.143.72.16] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:05:38 go-hangar49 kernel: [598421.324485] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=200.32.41.61 DST=62.171.163.29 LEN=52 TOS=0x00 PREC=0x00 TTL=114 ID=23215 DF PROTO=TCP SPT=54429 DPT=445 WINDOW=8192 RES=0x00 SYN URGP=0 
+Jul  6 16:05:40 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:05:43 go-hangar49 kernel: [598425.353274] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=39408 DF PROTO=TCP SPT=42618 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0 
+Jul  6 16:05:43 go-hangar49 kernel: [598425.354504] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=6183 DF PROTO=UDP SPT=51865 DPT=53 LEN=45 
+Jul  6 16:05:43 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:05:52 go-hangar49 kernel: [598434.609459] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=142.93.163.152 DST=144.91.68.245 LEN=40 TOS=0x00 PREC=0x00 TTL=250 ID=45445 PROTO=TCP SPT=42776 DPT=19060 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:06:00 go-hangar49 kernel: [598443.240779] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:06:01 go-hangar49 cron[1138]: (*system*) RELOAD (/etc/crontab)
+Jul  6 16:06:01 go-hangar49 CRON[5209]: (root) CMD (sleep 30 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:01 go-hangar49 CRON[5212]: (root) CMD (sleep 40 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:01 go-hangar49 CRON[5210]: (root) CMD (sleep 50 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:01 go-hangar49 CRON[5211]: (root) CMD (sleep 20 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:01 go-hangar49 CRON[5215]: (root) CMD (cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:01 go-hangar49 CRON[5216]: (root) CMD (sleep 10 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 42319EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 42319EA05E2: message-id=<20200706140602.42319EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 42319EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 42319EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 42CD8EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 42CD8EA05E2: message-id=<20200706140602.42CD8EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 42CD8EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 42CD8EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4362DEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4362DEA05E2: message-id=<20200706140602.4362DEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4362DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4362DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 43E2DEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 43E2DEA05E2: message-id=<20200706140602.43E2DEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 43E2DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 43E2DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 445F5EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 445F5EA05E2: message-id=<20200706140602.445F5EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 445F5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 445F5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 44DC2EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 44DC2EA05E2: message-id=<20200706140602.44DC2EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 44DC2EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 44DC2EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4557FEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4557FEA05E2: message-id=<20200706140602.4557FEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4557FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4557FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 45C9FEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 45C9FEA05E2: message-id=<20200706140602.45C9FEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 45C9FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 45C9FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 464ABEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 464ABEA05E2: message-id=<20200706140602.464ABEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 464ABEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 464ABEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 46CF2EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 46CF2EA05E2: message-id=<20200706140602.46CF2EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 46CF2EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 46CF2EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4744BEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4744BEA05E2: message-id=<20200706140602.4744BEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4744BEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4744BEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 47ADCEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 47ADCEA05E2: message-id=<20200706140602.47ADCEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 47ADCEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 47ADCEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 48425EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 48425EA05E2: message-id=<20200706140602.48425EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 48425EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 48425EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 48C47EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 48C47EA05E2: message-id=<20200706140602.48C47EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 48C47EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 48C47EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: warning: 4979AEA05E2: message has been queued for 4 days
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4979AEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4979AEA05E2: message-id=<20200706140602.4979AEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4979AEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4979AEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 49F8FEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 49F8FEA05E2: message-id=<20200706140602.49F8FEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 49F8FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 49F8FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4A8FFEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4A8FFEA05E2: message-id=<20200706140602.4A8FFEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4A8FFEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4A8FFEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4B4A5EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4B4A5EA05E2: message-id=<20200706140602.4B4A5EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4B4A5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4B4A5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4BE74EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4BE74EA05E2: message-id=<20200706140602.4BE74EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4BE74EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4BE74EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4C731EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4C731EA05E2: message-id=<20200706140602.4C731EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4C731EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4C731EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4D1B1EA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4D1B1EA05E2: message-id=<20200706140602.4D1B1EA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4D1B1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[4687]: 4D1B1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 postfix/pickup[2056]: 4D8ADEA05E2: uid=0 from=<root>
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4D8ADEA05E2: message-id=<20200706140602.4D8ADEA05E2@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:06:02 go-hangar49 opendkim[16929]: 4D8ADEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:06:02 go-hangar49 postfix/cleanup[5156]: 4D8ADEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:06:02 go-hangar49 kernel: [598444.669387] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=45.14.44.170 DST=62.171.163.29 LEN=40 TOS=0x08 PREC=0x20 TTL=244 ID=65117 DF PROTO=TCP SPT=3 DPT=15000 WINDOW=512 RES=0x00 SYN URGP=0 
+Jul  6 16:06:06 go-hangar49 kernel: [598448.570172] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=9190 DF PROTO=UDP SPT=60889 DPT=53 LEN=52 
+Jul  6 16:06:06 go-hangar49 kernel: [598448.570178] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=9190 DF PROTO=UDP SPT=60889 DPT=53 LEN=52 
+Jul  6 16:06:06 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:06:10 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:06:19 go-hangar49 kernel: [598461.496504] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:06:26 go-hangar49 kernel: [598469.307019] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=13067 DF PROTO=UDP SPT=41109 DPT=53 LEN=52 
+Jul  6 16:06:26 go-hangar49 kernel: [598469.307032] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=13067 DF PROTO=UDP SPT=41109 DPT=53 LEN=52 
+Jul  6 16:06:26 go-hangar49 postfix/smtpd[3977]: connect from unknown[212.70.149.18]
+Jul  6 16:06:27 go-hangar49 kernel: [598469.516209] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=116.106.161.78 DST=62.171.163.29 LEN=44 TOS=0x00 PREC=0x00 TTL=51 ID=40784 PROTO=TCP SPT=20204 DPT=81 WINDOW=14740 RES=0x00 SYN URGP=0 
+Jul  6 16:06:30 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:06:40 go-hangar49 kernel: [598482.917710] [UFW AUDIT] IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:28:99:3a:4d:23:91:08:00 SRC=173.212.238.3 DST=255.255.255.255 LEN=348 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=67 DPT=68 LEN=328 
+Jul  6 16:06:43 go-hangar49 kernel: [598485.352262] [UFW AUDIT] IN= OUT=lo SRC=127.0.0.1 DST=127.0.0.1 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=55113 DF PROTO=TCP SPT=42620 DPT=5672 WINDOW=65495 RES=0x00 SYN URGP=0 
+Jul  6 16:06:43 go-hangar49 kernel: [598485.353976] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=65 TOS=0x00 PREC=0x00 TTL=64 ID=14755 DF PROTO=UDP SPT=47009 DPT=53 LEN=45 
+Jul  6 16:06:44 go-hangar49 kernel: [598487.151437] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=45.14.44.170 DST=62.171.163.29 LEN=40 TOS=0x08 PREC=0x20 TTL=244 ID=65117 DF PROTO=TCP SPT=11 DPT=8883 WINDOW=512 RES=0x00 SYN URGP=0 
+Jul  6 16:06:57 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:06:59 go-hangar49 kernel: [598501.371293] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=106.13.106.27 DST=62.171.163.29 LEN=60 TOS=0x00 PREC=0x00 TTL=50 ID=51737 DF PROTO=TCP SPT=49788 DPT=22 WINDOW=29200 RES=0x00 SYN URGP=0 
+Jul  6 16:07:01 go-hangar49 kernel: [598503.716070] [UFW AUDIT] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=15099 DF PROTO=UDP SPT=54521 DPT=53 LEN=52 
+Jul  6 16:07:01 go-hangar49 kernel: [598503.716079] [UFW ALLOW] IN= OUT=eth0 SRC=62.171.163.29 DST=213.136.95.10 LEN=72 TOS=0x00 PREC=0x00 TTL=64 ID=15099 DF PROTO=UDP SPT=54521 DPT=53 LEN=52 
+Jul  6 16:07:01 go-hangar49 CRON[5358]: (root) CMD (sleep 40 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 CRON[5359]: (root) CMD (cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 CRON[5360]: (root) CMD (sleep 50 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 CRON[5363]: (root) CMD (sleep 30 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 CRON[5364]: (root) CMD (sleep 20 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 CRON[5368]: (root) CMD (sleep 10 && cd /var/www/apps/dusk.outreach-hangar49.com_app && php artisan schedule:run >> /dev/null 2>&1)
+Jul  6 16:07:01 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E08E3EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E08E3EA05E2: message-id=<20200706140702.E08E3EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E08E3EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E08E3EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E196FEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E196FEA05E2: message-id=<20200706140702.E196FEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E196FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E196FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E240DEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E240DEA05E2: message-id=<20200706140702.E240DEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E240DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E240DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E2D71EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E2D71EA05E2: message-id=<20200706140702.E2D71EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E2D71EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E2D71EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E3711EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E3711EA05E2: message-id=<20200706140702.E3711EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E3711EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[4687]: E3711EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E3F80EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E3F80EA05E2: message-id=<20200706140702.E3F80EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E3F80EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E3F80EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E48B6EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E48B6EA05E2: message-id=<20200706140702.E48B6EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E48B6EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E48B6EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E519FEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E519FEA05E2: message-id=<20200706140702.E519FEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E519FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E519FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E5B7DEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E5B7DEA05E2: message-id=<20200706140702.E5B7DEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E5B7DEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E5B7DEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E63E6EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E63E6EA05E2: message-id=<20200706140702.E63E6EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E63E6EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E63E6EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E6B94EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E6B94EA05E2: message-id=<20200706140702.E6B94EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E6B94EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E6B94EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E72F5EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E72F5EA05E2: message-id=<20200706140702.E72F5EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E72F5EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E72F5EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E7AB8EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E7AB8EA05E2: message-id=<20200706140702.E7AB8EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E7AB8EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E7AB8EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E81F8EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E81F8EA05E2: message-id=<20200706140702.E81F8EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E81F8EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E81F8EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: warning: E8806EA05E2: message has been queued for 4 days
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E8806EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E8806EA05E2: message-id=<20200706140702.E8806EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E8806EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E8806EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E8CF1EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E8CF1EA05E2: message-id=<20200706140702.E8CF1EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E8CF1EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E8CF1EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E9307EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E9307EA05E2: message-id=<20200706140702.E9307EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E9307EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E9307EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E9919EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E9919EA05E2: message-id=<20200706140702.E9919EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E9919EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: E9919EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: E9F1FEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E9F1FEA05E2: message-id=<20200706140702.E9F1FEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: E9F1FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: E9F1FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: EA533EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: EA533EA05E2: message-id=<20200706140702.EA533EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: EA533EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: EA533EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: EAB26EA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: EAB26EA05E2: message-id=<20200706140702.EAB26EA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: EAB26EA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5384]: EAB26EA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 postfix/pickup[2056]: EB24FEA05E2: uid=0 from=<root>
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: EB24FEA05E2: message-id=<20200706140702.EB24FEA05E2@go-hangar49.com>
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: KeyTable entry for 'default._domainkey.go-hangar49.com' corrupt
+Jul  6 16:07:02 go-hangar49 opendkim[16929]: EB24FEA05E2: error loading key 'default._domainkey.go-hangar49.com'
+Jul  6 16:07:02 go-hangar49 postfix/cleanup[5156]: EB24FEA05E2: milter-reject: END-OF-MESSAGE from localhost[127.0.0.1]: 4.7.1 Service unavailable - try again later; from=<root@go-hangar49.com> to=<root@go-hangar49.com>
+Jul  6 16:07:05 go-hangar49 kernel: [598508.149976] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=67.21.79.138 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x00 TTL=247 ID=46070 PROTO=TCP SPT=32767 DPT=8895 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:07:06 go-hangar49 postfix/smtpd[3977]: connect from unknown[185.143.72.16]
+Jul  6 16:07:10 go-hangar49 postfix/smtpd[3977]: disconnect from unknown[185.143.72.16] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
+Jul  6 16:07:18 go-hangar49 postfix/smtpd[3749]: connect from unknown[212.70.149.18]
+Jul  6 16:07:18 go-hangar49 kernel: [598521.159710] [UFW AUDIT] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x20 TTL=236 ID=9602 PROTO=TCP SPT=43418 DPT=4548 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:07:18 go-hangar49 kernel: [598521.159755] [UFW BLOCK] IN=eth0 OUT= MAC=00:50:56:3f:d2:69:28:99:3a:4d:30:af:08:00 SRC=13.235.143.48 DST=62.171.163.29 LEN=40 TOS=0x00 PREC=0x20 TTL=236 ID=9602 PROTO=TCP SPT=43418 DPT=4548 WINDOW=1024 RES=0x00 SYN URGP=0 
+Jul  6 16:07:22 go-hangar49 postfix/smtpd[3749]: disconnect from unknown[212.70.149.18] ehlo=1 auth=0/1 rset=1 quit=1 commands=3/4
